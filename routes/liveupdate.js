@@ -53,7 +53,7 @@ router.post("/liveupdate", async function (req, res) {
 
     const htmlMessage = `
       <div style="width: 600px; margin: 0 auto; background: #F0F2F5; padding: 20px;">
-          <img src="https://hublinkexpress.com/assets/images/logo-v2.png" height="50px" alt="Hublink Express" />
+          <img src="https://cour.hublinkexpress.com/assets/images/logo-v2.png" height="50px" alt="Hublink Express" />
           <h3 style="margin-left: 0;">New Parcel Update</h3>
           <p>Hello ${safeReceiverName},</p>
 
@@ -69,7 +69,7 @@ router.post("/liveupdate", async function (req, res) {
 
           <p style="font-size: .85em; color: gray">This is an automatically generated email. If you need help reply to info@hublinkexpress.com</p>
 
-          <p style="font-size: .85em; color: gray">Website: www.hublinkexpress.com • Email: info@hublinkexpress.com • Tel: +1 585 308 0030</p>
+          <p style="font-size: .85em; color: gray">Website: www.cour.hublinkexpress.com • Email: info@hublinkexpress.com • Tel: +1 585 308 0030</p>
       </div>
     `;
 

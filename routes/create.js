@@ -65,7 +65,7 @@ router.post("/create", async function (req, res) {
 
     const htmlMessage = `
       <div style="width: 600px; margin: 0 auto; min-height: 600px; background: #F0F2F5; padding: 20px;">
-          <img src="https://hublinkexpress.com/assets/images/logo-v2.png" height="50px" alt="Hublink Express" />
+          <img src="https://cour.hublinkexpress.com/assets/images/logo-v2.png" height="50px" alt="Hublink Express" />
           <h3 style="margin-left: 0;">A Package has been sent to you</h3>
           <p>Hi ${safeReceiverName},</p>
           <p>A package has been sent to you and is in process. See details below.</p>
