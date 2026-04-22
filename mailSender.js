@@ -14,18 +14,21 @@ async function mailSender(from, receiver, subject, message, options = {}) {
     throw err;
   }
 
-  let transporter = nodemailer.createTransport({
+  // SMTP configuration (hard-coded)
+  const transporterOptions = {
     host: "mail.hublinkexpress.com",
-    secureConnection: true,
+    port: 465,
+    secure: true,
     tls: {
       rejectUnauthorized: false,
     },
-    port: 465,
     auth: {
       user: "noreply@hublinkexpress.com",
       pass: "Dx19Si[81R!hrS",
     },
-  });
+  };
+
+  let transporter = nodemailer.createTransport(transporterOptions);
 
   // create a plain-text fallback if none provided by stripping tags
   const stripHtml = (html) => (html || "").replace(/<[^>]*>/g, '');

@@ -52,20 +52,7 @@ app.use("/", transit);
 app.use("/", delivered);
 app.use("/", contact);
 
-/* var twilio = require('twilio');
-
-// Find your account sid and auth token in your Twilio account Console.
-var client = new twilio('AC1c3c63e817d8fae6f9ac9e306b3ec0e7', '740647c8d4b95dcfe004126f4b190a29');
-
-// Send the text message.
-client.messages.create({
-  to: '+34612432655',
-  from: '+34931071116',
-  body: 'Hello sir, It\'s me testing the sms capability of Lacaixa Bank'
-})
-.then((message) => console.log(message.sid));
-
- */
+/* Twilio usage removed — no longer used. Previously contained hard-coded Twilio credentials; credentials must be rotated and removed from history if they were committed. */
 
 app.listen(process.env.PORT || 5000);
 console.log(
